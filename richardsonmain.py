@@ -1,1 +1,1 @@
-"""File für Richardson-Hauptrechnung"""
+"""File für relax. Richardson-Hauptrechnung"""
