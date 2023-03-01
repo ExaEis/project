@@ -36,7 +36,7 @@ class vector(list):
         return b ** (1/p)
 
 """
-#test scal_mul
+#test scal_mul 
 vec = vector([1, 2, 3, 4])
 print(vec)
 """
