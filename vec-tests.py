@@ -19,7 +19,7 @@ def test_rmul():
 test_rmul()
 
 def test_add():
-    assert vector([1, 2, 3]) + vector ([0, 1, 2]) == vector([1, 3, 5])
+    assert vector([1, 2, 3]) + vector([0, 1, 2]) == vector([1, 3, 5])
     assert vector([6]) + vector([3]) == vector([9])
     assert vector([0, 0, 0]) + vector([1, 2, 3]) == vector([1, 2, 3])
     assert vector([3, 3, 1]) + vector([1, 2, 1]) != vector([3, 3, 5])
