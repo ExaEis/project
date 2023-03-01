@@ -8,7 +8,7 @@ class vector(list):
         b = [0] * self.len
         for i in range(self.len):
             b[i] = self.tupel[i] * scal
-        return vector(b) #, b
+        return vector(b) #,b
 
     def __rmul__(self, scal):
         b = [0] * self.len
@@ -26,7 +26,7 @@ class vector(list):
         b = [0] * self.len
         for i in range(self.len):
             b[i] = self.tupel[i] - vec.tupel[i]
-        return vector(b) #, b
+        return vector(b) # , b
 
     def __norm__(self, p):
         b = 0
@@ -40,6 +40,8 @@ test scal_mul
 vec = vector([1, 2, 3, 4])
 print(vec*4)
 """
+
+
 
 """
 test vec_add
