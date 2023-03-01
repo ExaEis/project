@@ -19,7 +19,7 @@ def test_rmul():
 
 "sub_test"
 
-from vec_class import *
+#from vec_class import *
 
 def test__sub__():
     assert vector([1, 1, 1]) == vector([1, 2, 3]) - vector ([0, 1, 2])
