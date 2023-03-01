@@ -41,6 +41,8 @@ vec = vector([1, 2, 3, 4])
 print(vec)
 """
 
+
+
 """
 #test vec_add
 vec1 = vector([1, 2, 3])
@@ -53,3 +55,4 @@ norm test
 r = vector([1, 2, 3, 4])
 print(r.__norm__(3))
 """
+
