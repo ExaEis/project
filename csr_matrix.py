@@ -1,4 +1,4 @@
-from vector import *
+from vec_class import *
 class csr_matrix:
 
     def __init__(self, csr_tup):
