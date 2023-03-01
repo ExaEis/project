@@ -39,7 +39,7 @@ def test_add():
 test_add()
 
 def test_norm():
-    assert vector([3, 4]).__norm__(2) == 25
+    assert vector([3, 4]).__norm__() == 5
     assert vector([1, 2, 3]).__norm__(3) != 3
     assert vector([0, 0, 0]).__norm__(8) == 0
     assert vector([1, 1, 1, 1, 1, 1, 1, 1]).__norm__(3) == 2
