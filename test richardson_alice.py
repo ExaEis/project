@@ -9,7 +9,7 @@ b = vector([2, 2])
 theta = 0.29
 start_x = vector([0, 0])
 maxiter = 1000000
-tol = 0.00001
+tol = 0.0001
 
 #Erwartung x = [0, 1]
 x = richardson(A, b, start_x, theta, tol, maxiter)
