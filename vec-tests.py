@@ -16,3 +16,4 @@ def test_rmul():
     assert vector (1/3)*([9, 9, 9]) == vector([3, 3, 3])
     assert vector 11*([0, 0, 0, 0]) == vector([0])
 
+
