@@ -1,23 +1,25 @@
 """File für relax. Richardson-Hauptrechnung"""
-from csr_matrix import csr_matrix
+from lep_csr import csr_matrix
 from vec_class import vector
-a = csr_matrix ([1,2,2,1,1,2,2,2],[0,3,1,2,3,4,0,2],[0,3,5,6,7,9])
+
+a = csr_matrix ([0.5,0.3,0.4,0.1,0.7],[0,1,2,3,4],[0,1,2,3,4,5])
 #insert matrix as csr matrix
-maxiter = 55
+maxiter = 1000000000
 #insert number of iterations
-startvalue = vector ([0,0,0,0,0])
+startvalue = vector ([1,1,1,1,1])
 #choose vector to start from
 x = startvalue
-b = vector ([1,2,0,1,1])
+b = vector ([3,4,2,5,6])
 #insert target vector
-h = 0.1
+h = 0.001
 #insert scaling
-tol = 0.5
+tol = 0.00001
 #insert toleration
 
 for k in range (maxiter):
     r = a@x-b
     if vector.__norm__(r) < tol:
-        print(x)
+        print ("finished in ranged")
         break
     x = x-h*r
+print(x)
