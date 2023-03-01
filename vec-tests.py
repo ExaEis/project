@@ -23,7 +23,7 @@ def test_add():
     assert vector([6]) + vector([3]) == vector([9])
     assert vector([0, 0, 0]) + vector([1, 2, 3]) == vector([1, 2, 3])
     assert vector([3, 3, 1]) + vector([1, 2, 1]) != vector([3, 3, 5])
-    assert vector([-5, 3]) + vector([3, -2]) == vector([-2, 1])
+    assert vector([-5, 3.1]) + vector([3, -2.1]) == vector([-2, 1])
 test_add()
 
 def test_sub():
