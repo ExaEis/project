@@ -28,11 +28,11 @@ class vector(list):
             b[i] = self[i] - vec[i]
         return vector(b) #, b
 
-    def __norm__(self, p):
+    def __norm__(self, p = 2):
         n = len(self)
-        b = [0] * n
+        b = 0
         for i in range(n):
-            b += self[i] ** p
+            b += abs(self[i]) ** p
         return b ** (1/p)
 
 """
