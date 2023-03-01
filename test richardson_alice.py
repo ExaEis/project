@@ -3,7 +3,7 @@ from richardson_moritz import *
 from lep_csr import *
 from vec_class import *
 
-"""test richardson Bsp Tafel"""
+"""test richardson Bsp Tafel
 A = csr_matrix([2, 2, 1, 2], [0, 1, 0, 1], [0, 2, 4])
 b = vector([2, 2])
 theta = 0.29
@@ -13,18 +13,19 @@ tol = 0.0001
 
 #Erwartung x = [0, 1]
 x = richardson(A, b, start_x, theta, tol, maxiter)
-print(x)
+print(x)"""
 
-"""Test Triagonalmatrix
-A = csr_matrix([2, 1, 1, 2, 1, 1, 2], [0, 1, 0, 1, 2, 1, 2], [0, 2, 5, 7])
+"""Test Triagonalmatrix """
+A = csr_matrix([2, 2, 2], [0, 1, 2], [0, 1, 2, 3])
 b = vector([4, 4, 4])
 theta = 0.00001
 start_x = [0, 0, 0]
 maxiter = 10000
 tol = 0.00001
 
+#Erwartung x = [2, 2, 2]
 x = richardson(A, b, start_x, theta, tol, maxiter)
-print(x)"""
+print(x)
 
 
 """Test Einheitsmatrix
