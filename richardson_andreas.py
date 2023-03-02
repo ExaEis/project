@@ -10,9 +10,9 @@ def richardson_verfahren (A,b,x,theta,maxiter,tol):
 
     for k in range(maxiter):
         r_k = (matrix_a @ vec_x) - b
-        r_k_liste.append(r_k.euklidische_norm_quadrat())
+        r_k_liste.append(r_k.__norm__())
         if r_k.__norm__() < tol:
             break
         vec_x = vec_x - (theta * r_k)
 
-    return vec_x, k, r_k.euklidische_norm_quadrat(), #r_k_liste
+    return vec_x, k, r_k.__norm__(), #r_k_liste
